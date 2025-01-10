@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  color: white;
+  background: url(https://media.istockphoto.com/id/876279640/photo/blue-dark-night-sky-with-many-stars.jpg?s=612x612&w=0&k=20&c=hyvhGh5U8khcm-KgdNWcIVl61_JPfB8WXSivdDxFLSk=);
+  /** image from istock url: https://www.istockphoto.com/photo/blue-dark-night-sky-with-many-stars-gm876279640-244588610**/
+  margin: 0;
+}
+
+.star {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.img-star { 
+  height: 100px;
+  width: 75px;
+  color: rgba(115, 75, 175, 100%);
+  padding-right: 10px;
+  padding-top: 29px;
+}
+
+.star-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#register {
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  width: 95%;
+  margin:auto;
+}
+
+.newsletter {
+  font-size: 20;
+}
+
+nav-bar {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: block;
+}
+
+nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 20px;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #151537;
+
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.info {
+  position: relative;
+  font-size: 30;
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  padding-bottom: 20px;
+  padding-top: 2px;
+  border-radius: 10px;
+  background-color: rgba(3, 2, 7, 0.5);
+}
+
+.info input {
+  width: 20%;
+  text-align: left;
+  min-width: 55px;
+}
+
+.enter {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.info input {
+  width: 30%;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: solid #151537;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+  background: #151537;
+  border: #151537;
+  cursor: pointer;
+}
+
+.paragraphs {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(3, 2, 7, 0.5);
+  padding: 20px 20px;
+  padding-bottom: 0;
+  }
+
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.paragraph {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+.paragraph:last-child {
+  border-bottom: none;
+}
+
+.video {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  padding-bottom: 70px;
+}
+
+.blocks {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 10px;
+  column-gap: 2rem;
+}
+
+.block {
+  display: block;
+  width: 300;
+  height: 250px;
+  background-color: rgba(3, 2, 7, 0.5);
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  background-color: black;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 950px) {
+  .blocks {
+    grid-auto-flow: row;
+  }
+  .block {
+    margin-top: 20px; 
+  }
+}
